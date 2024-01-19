@@ -34,7 +34,7 @@ public class Termometro {
 				posicionTemp[j]=i;
 				j++;
 			}
-			if (i==(dia-1)) {
+			if (i==(dia)) {
 				diasSemana=(int) termometro[i];
 			}
 		}
@@ -43,25 +43,25 @@ public class Termometro {
 
 	private char queDia(char dia) {
 		if (dia == 'L') {
-			dia=1;
+			dia=0;
 		}
 		 if(dia=='M') {
-			dia=2;
+			dia=1;
 		}
 		 if (dia=='X') {
-			dia=3;
+			dia=2;
 		}
 		 if (dia=='J') {
-			dia=4;
+			dia=3;
 		}
 		 if(dia=='V') {
-			dia=5;
+			dia=4;
 		}
 		if (dia=='S') {
-			dia=6;
+			dia=5;
 		}
 		if(dia=='D') {
-			dia=7;
+			dia=6;
 		}
 		return dia;
 	}
